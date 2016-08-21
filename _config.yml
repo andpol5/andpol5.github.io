@@ -1,5 +1,5 @@
 title:            Notepad
-description:      "Blogging is fun"
+description:      "Andrei Polzounov's blog"
 logo:             logo.png
 disqus_shortname: andpol5
 share:            true
@@ -15,7 +15,7 @@ owner:
   avatar:         hmfaysal.jpg
   email:          and.pol5 {at} gmail {dot} com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Awesome Dude, Awesome Life
+  description:    My Tech Blog
   # Social networking links used in footer. Update and remove as you like.
 
 # Analytics and webmaster tools stuff goes here
@@ -33,8 +33,8 @@ links:
     icon: home
   - title: Featured Posts
     url: /featured
-  - title: Categories
-    url: /categories
+#  - title: Categories
+#    url: /categories
   - title: About
     url: /about
 
@@ -42,29 +42,29 @@ links:
 timezone:    Asia/Singapore	
 future:      true
 highlighter: pygments
-markdown:    redcarpet
+#markdown:    redcarpet
 paginate:    5
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
 
-redcarpet:
-    extensions: ["no_intra_emphasis"]
+#redcarpet:
+#    extensions: ["no_intra_emphasis"]
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enble_coderay: false
-
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+#kramdown:
+#  auto_ids: true
+#  footnote_nr: 1
+#  entity_output: as_char
+#  toc_levels: 1..6
+#  enble_coderay: false
+#
+#  coderay:
+#    coderay_line_numbers: 
+#    coderay_line_numbers_start: 1
+#    coderay_tab_width: 4
+#    coderay_bold_every: 10
+#    coderay_css: class
 
 prose:
   rooturl: '_posts'
@@ -116,8 +116,8 @@ prose:
               value: engineering
             - name: "Physics"
               value: physics
-            - name: "Psychology"
-              value: psychology
+            - name: "Artificial Intelligence"
+              value: ai
             - name: "Interesting"
               value: interesting
             - name: "Web-Development"

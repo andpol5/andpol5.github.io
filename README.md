@@ -1,5 +1,5 @@
 Notepad is a Jekyll theme which is very simple, clean and beautiful. This theme is good for any blog.
-  
+
 Main Features:
 
 * Zurb Foundation 5 – css framework
@@ -23,5 +23,5 @@ Credits:
 If you'd like to give me credit somewhere on your blog or tweet a shout out to [@hmfaysal](https://twitter.com/hmfaysal), that would be pretty sweet.
 
 
-Warm Regards and Stay Creative,  
+Warm Regards and Stay Creative,
 Hossain Mohd. Faysal
