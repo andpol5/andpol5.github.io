@@ -92,7 +92,7 @@ $$f[x, y]*g[x,y] = \sum_{n_1=0}^{M}\sum_{n_2=0}^{N}f[n1,n2] g[x-n_1,y-n_2]$$
     the nonlinear properties of the neural decision functions. Some
     common functions are the rectified linear unit (ReLu)
     f(x)=max(0,x), logistic sigmoid function
-    $$f(x)=(1+e^{-x})^{-1}$$ and the hyperbolic tangent f(x) = tanh(x).
+    <span>$$f(x)=(1+e^{-x})^{-1}$$</span> and the hyperbolic tangent f(x) = tanh(x).
 
 4)  Fully-connected layers - fully connected layers flatten the pixel
     output of the convolutional part of the network into a flat neuron
