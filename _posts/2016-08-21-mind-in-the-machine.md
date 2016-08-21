@@ -86,6 +86,8 @@ Equation 2: 2 dimensional discreet convolution (where M,N is the matrix size):
 
 $$f(x,y)*g(x,y) = \sum_{n_1=0}^{M}\sum_{n_2=0}^{N}f(n1,n2) g(x-n_1,y-n_2)$$
 
+$$f(x,y)*g(x,y) = f(n1,n2) g(x-n_1,y-n_2)$$
+
 2)  Pooling layer - the max pooling layer is a type of sub-sampling.
     This function is necessary for reducing the number of parameters and
     for building levels of abstractions with a smaller number of
