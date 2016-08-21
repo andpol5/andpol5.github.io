@@ -36,7 +36,7 @@ deep learning, brain regions and single neuron models. Section
 2 focuses on theories and research in neuroscience as it
 relates to artificial intelligence.
 
-![fig1](CNN_diagram.png)
+![fig1](../images/CNN_diagram.png)
 *Typical diagram of a convolutional neural network (Wikipedia)*
 
 1 Background Information
