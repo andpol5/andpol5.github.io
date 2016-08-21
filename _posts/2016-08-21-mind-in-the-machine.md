@@ -15,7 +15,7 @@ imagefeature: ''
 # Mind in the Machine
 ## Can Deep Learning Approximate Brain Function?
 
-I wrote the following essay as the course project for the Minds, Brains and Machines class of the Master in AI at the Universitat Politecnica de Catalunya.
+I wrote the following essay as the course project for the Minds, Brains and Machines class of the Master in AI at the Universitat Politècnica de Catalunya in Barcelona Spain.
 
 
 Introduction
@@ -36,10 +36,10 @@ deep learning, brain regions and single neuron models. Section
 2 focuses on theories and research in neuroscience as it
 relates to artificial intelligence.
 
-![fig1](images/CNN_diagram.png)
+![fig1](CNN_diagram.png)
 *Typical diagram of a convolutional neural network (Wikipedia)*
 
-1 Background Information {#sec:background}
+1 Background Information
 ======================
 
 Deep Learning
@@ -69,7 +69,7 @@ visual system functions. Later, such knowledge was incorporated into the AI fiel
 
 Typically a CNN consists of the following elements:
 
-1.  Convolutional layer - this is the core building block of CNNs. A
+1)  Convolutional layer - this is the core building block of CNNs. A
     single discreet convolution on an image represents a receptive field
     of an animal visual system. A convolution is performed by comparing
     the learn-able filter kernel with the receptive field of the image.
@@ -82,33 +82,33 @@ Typically a CNN consists of the following elements:
     $$\label{eq:2dconv}
         f[x, y]*g[x,y] = \sum_{n_1=0}^{M}\sum_{n_2=0}^{N}f[n1,n2] g[x-n_1,y-n_2]$$
 
-2.  Pooling layer - the max pooling layer is a type of sub-sampling.
+2)  Pooling layer - the max pooling layer is a type of sub-sampling.
     This function is necessary for reducing the number of parameters and
     for building levels of abstractions with a smaller number of
     parameters (smaller resolution).
 
-3.  Nonlinearity - a nonlinear activation function is needed to increase
+3)  Nonlinearity - a nonlinear activation function is needed to increase
     the nonlinear properties of the neural decision functions. Some
     common functions are the rectified linear unit (ReLu)
     f(x)=max(0,x), logistic sigmoid function
     f(x)=(1+e^-x)^-1 and the hyperbolic tangent f(x) = tanh(x).
 
-4.  Fully-connected layers - fully connected layers flatten the pixel
+4)  Fully-connected layers - fully connected layers flatten the pixel
     output of the convolutional part of the network into a flat neuron
     structure where each neuron is connected to a pixel of the
     previous part. The fully-connected layers are expected to learn
     latent variables of the data distribution.
 
-5.  Loss layer - the loss function models the difference between the
+5)  Loss layer - the loss function models the difference between the
     model that the CNN builds and the true data distribution. While
     training CNNs the loss function is minimized - treating the learning
     problem as a mathematical optimization.
 
-6.  Backpropagation - after an error with respect to the loss function
+6)  Backpropagation - after an error with respect to the loss function
     is calculated we can backpropagate through the entire network and
     update weight parameters of all neurons.
 
-7.  Regularization methods - bias/variance tradeoff and Occam’s razor
+7)  Regularization methods - bias/variance tradeoff and Occam’s razor
     state that the simplest solution to a problem is usually the best.
     Some of the common methods used for regularization are dropout, 
     weight decay and L1 or L2 regularization.
@@ -161,10 +161,10 @@ Brain Regions and Brain Mapping
 -------------------------------
 
 The human brain is more complex than any artificial system created so
-far. An adult brain has around 100·10^9 neurons
+far. An adult brain has around 100·10⁹ neurons
 and 10 times as many glial cells. Rough estimates of
 the number of synapses and dendrites (tree-like structures with synapses
-on them) are 10^12 and 300\*10^9 respectively. These estimates
+on them) are 10¹² and 300·10⁹ respectively. These estimates
 are an approximation due to the variation in the types of neurons in the
 brain as seen in Figure 3.
 
@@ -181,7 +181,7 @@ complexity are the cerebellum and the cerebrum. The cerebellum (Latin
 for little brain) is the motor control complex of the central nervous
 system. It is densely packed with 3/4 of all of the neurons of the
 brain. Many of them are packed with dense Purkinje cells (which have
-upwards of 10^6 synapses each). However, most researchers used to
+upwards of 10⁶ synapses each). However, most researchers used to
 think that the cerebellum is the primitive part of the brain (solely
 responsible for motor control and involuntary action) and only recently
 some research has shown that the cerebellum has links to intelligence
@@ -229,13 +229,13 @@ cortical columns (Mountcastle, 1978).
 Follow-up by Hubel and Weisel that found similar repeating patterns in
 the visual system of monkeys (along with further
 investigation) won the 1981 Nobel Prize in medicine. Each column
-consists of roughly 60\*10^3 neurons and there are 2.5\*10^6
+consists of roughly 60·10³ neurons and there are 2.5·10⁶
 columns in the neocortex. The existence of even smaller units of
 organization has been hypothesized. These units are called the
 mini-columns. Each mini-column is said to contain about 100 neurons.
-With this estimate there would be roughly 300\*10^6 mini-columns in
+With this estimate there would be roughly 300·10⁶ mini-columns in
 the brain. In Ray Kurzweil’s book “How to Create a Mind”, Kurzweil shows
-that the human brain is capable of storing roughly 300\*10^6
+that the human brain is capable of storing roughly 300·10⁶
 patterns giving weight to the idea that the mini-column
 is the basic unit of pattern recognition and that the brain may utilize
 the same kind of regular organization that artificial neural systems
@@ -259,12 +259,12 @@ Synaptic vesicles (as seen in Figure 4) carry
 neurotransmitters within them before spilling them out into the synaptic
 cleft where:
 
-1.  They may find a receptor protein on the dendrite of the
+1) They may find a receptor protein on the dendrite of the
     post-synaptic neuron.
 
-2.  A protein could disintegrate them in the synaptic cleft.
+2) A protein could disintegrate them in the synaptic cleft.
 
-3.  A protein could pull it back into the axon (re-uptake) of
+3) A protein could pull it back into the axon (re-uptake) of
     pre-synaptic neuron.
 
 The first two model a process that is similar to multi-layer perceptrons
@@ -274,11 +274,11 @@ Once inside of the dendrite a neurotransmistter generally acts to open asu
 channel for ion flow into the dendrite. Less commonly it may bind to a
 G-protein and produce a signalling cascade that can:
 
-1.  Regulate a gene to produce new proteins, that integrate in synaptic
+1)  Regulate a gene to produce new proteins, that integrate in synaptic
     surfaces (neuron body, dendrites) - this is related to learning
     and plasticity.
 
-2.  Signal proteins to change the spatial structure of the dendrites
+2)  Signal proteins to change the spatial structure of the dendrites
     and synapses. This is like dynamically changing the architecture of
     a neural network - something very difficult to do in
     artificial networks.
