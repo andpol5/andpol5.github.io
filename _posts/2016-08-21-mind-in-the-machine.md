@@ -10,6 +10,9 @@ description: Mind in the Machine
 categories:
   - engineering
   - interesting
+modified: ''
+tags: ''
+imagefeature: ''
 ---
 # Mind in the Machine
 ## Can Deep Learning Approximate Brain Function?
@@ -74,15 +77,11 @@ Typically a CNN consists of the following elements:
     the learn-able filter kernel with the receptive field of the image.
     It results in an activation of the image to that particular filter.
 
-    1 dimensional convolution of continuous variables:
+Equation 1: 1 dimensional convolution of continuous variables:
+$$f(t)*g(t) = \int_{-\infty}^{\infty}f(\tau) g(t-\tau)d\tau$$ 
     
-    Equation 1: 1-D Convolution
-    
-    $$f(t)*g(t) = \int_{-\infty}^{\infty}f(\tau) g(t-\tau)d\tau$$ 
-    
-    2 dimensional discreet convolution (where M,N is the matrix size):
-    Equation 2: 2-D Convolution
-        f[x, y]*g[x,y] = \sum_{n_1=0}^{M}\sum_{n_2=0}^{N}f[n1,n2] g[x-n_1,y-n_2]$$
+Equation 2: 2 dimensional discreet convolution (where M,N is the matrix size):
+$$f[x, y]*g[x,y] = \sum_{n_1=0}^{M}\sum_{n_2=0}^{N}f[n1,n2] g[x-n_1,y-n_2]$$
 
 2)  Pooling layer - the max pooling layer is a type of sub-sampling.
     This function is necessary for reducing the number of parameters and
@@ -93,7 +92,7 @@ Typically a CNN consists of the following elements:
     the nonlinear properties of the neural decision functions. Some
     common functions are the rectified linear unit (ReLu)
     f(x)=max(0,x), logistic sigmoid function
-    f(x)=(1+e^-x)^-1 and the hyperbolic tangent f(x) = tanh(x).
+    $$f(x)=(1+e^{-x})^{-1}$$ and the hyperbolic tangent f(x) = tanh(x).
 
 4)  Fully-connected layers - fully connected layers flatten the pixel
     output of the convolutional part of the network into a flat neuron
