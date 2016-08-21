@@ -9,7 +9,7 @@ headline: Minds in the Machine - Can Deep Learning Approximate Brain Function?
 description: Mind in the Machine
 categories:
   - engineering
-  - interesting
+  - AI
 modified: ''
 tags: ''
 imagefeature: ''
@@ -38,7 +38,7 @@ deep learning, brain regions and single neuron models. Section
 2 focuses on theories and research in neuroscience as it
 relates to artificial intelligence.
 
-![fig1](../images/CNN_diagram.png)
+![fig1](../images/mbm/CNN_diagram.png)
 
 *Typical diagram of a convolutional neural network (Wikipedia)*
 
@@ -84,9 +84,7 @@ $$f(t)*g(t) = \int_{-\infty}^{\infty}f(\tau) g(t-\tau)d\tau$$
     
 Equation 2: 2 dimensional discreet convolution (where M,N is the matrix size):
 
-$$f(x,y)*g(x,y) = \sum_{n_1=0}^{M}\sum_{n_2=0}^{N}f(n1,n2) g(x-n_1,y-n_2)$$
-
-$$f(x,y)*g(x,y) = f(n1,n2) g(x-n_1,y-n_2)$$
+$$f(x,y)*g(x,y) = \sum\_{n\_1=0}^{M}\sum\_{n\_2=0}^{N}f(n1,n2) g(x-n\_1,y-n\_2)$$
 
 2)  Pooling layer - the max pooling layer is a type of sub-sampling.
     This function is necessary for reducing the number of parameters and
@@ -96,8 +94,8 @@ $$f(x,y)*g(x,y) = f(n1,n2) g(x-n_1,y-n_2)$$
 3)  Nonlinearity - a nonlinear activation function is needed to increase
     the nonlinear properties of the neural decision functions. Some
     common functions are the rectified linear unit (ReLu)
-    f(x)=max(0,x), logistic sigmoid function
-    f(x)=(1+e^-x)^-1 and the hyperbolic tangent f(x) = tanh(x).
+    $f(x)=max(0,x)$, logistic sigmoid function
+    $f(x)=(1+e^{-x})^{-1}$ and the hyperbolic tangent $f(x) = tanh(x)$.
 
 4)  Fully-connected layers - fully connected layers flatten the pixel
     output of the convolutional part of the network into a flat neuron
@@ -174,11 +172,11 @@ on them) are 10¹² and 300·10⁹ respectively. These estimates
 are an approximation due to the variation in the types of neurons in the
 brain as seen in Figure 3.
 
-![fig2](../images/Gray677.png)
+![fig2](../images/mbm/Gray677.png)
 
 *Cerebellum and Cerebrum*
 
-![fig3](../images/neuron_types.png)
+![fig3](../images/mbm/neuron_types.png)
 
 *Different types of neurons in the brain*
 
@@ -226,7 +224,7 @@ on the area of brain specialization - in the occipital lobe (responsible
 for visual processing) layer IV has a very complex structure just to
 handle the input of visual data.
 
-![fig4](.../images/neuron_anatomy.jpg)
+![fig4](.../images/mbm/neuron_anatomy.png)
 
 *Left: diagram of a neuron. Right: Axon terminal and dendrite of next neuron.*
 
@@ -304,12 +302,12 @@ integrate-and-fire models. Both models are relatively
 simple, but can provide an element of nonlinearity to the decision
 function of the neuron. Figure 5 shows both the
 integration of previous inputs (analogous to convolution as seen in
-Equation \[eq:1dconv\]) and recurrence of previous outputs (as in RNNs).
+Equation 1) and recurrence of previous outputs (as in RNNs).
 In some ways a single neuron is more complex than a single convolutional
 layer in a deep learning network. However, it has not yet been shown
 that all of this complexity is required for learning.
 
-![fig5](../images/leaky_integrator.png)
+![fig5](../images/mbm/leaky_integrator.png)
 
 *Leaky integrate-and-fire model of neuron spiking.*
 
@@ -319,8 +317,8 @@ Neuro-encoding
 As noted in the subsection above, most models of information flow in the
 brain use the neuron action potential as the basic unit of information.
 This view ignores some of the complex protein and DNA interactions
-(further investigated in Section
-\[sec:ProteinsAndGeneticManipulation\]), they also ignore single neuron
+(further investigated in 
+[Protein Signaling and Genetic Manipulation](##Protein Signaling and Genetic Manipulation)), they also ignore single neuron
 effects and the action potential height and width variations. Having
 said that, spikes provide a good reference for investigating brain
 function. Complex sequences of spikes (spike trains) are termed
@@ -346,12 +344,12 @@ similarities between deep learning and the brain.
 ### Convolution as Dendritic Spikes
 
 The role of convolutional layers in deep learning was explained in
-Section \[sec:ConvNets\]. Also, a brief overview of dendritic spikes was
-given in \[sec:DendriticSpikes\]. It becomes clear that the
+Convolutional Neural Networks. Also, a brief overview of dendritic spikes was
+given in [Dendritic Spikes](##Dendritic Spikes). It becomes clear that the
 neuron-dendrite model is at least as complex as a convolutional layer.
 In fact, the commonly used methods for modeling dendritic interactions
 in neuroscience are the LNP and the integrate-and-fire models (Figure
-\[fig:leaky\_integrator\]). The two models can be thought of as a
+5). The two models can be thought of as a
 summation and an integration respectively, just like the convolution
 equations described in Section \[sec:ConvNets\].
 
@@ -371,7 +369,7 @@ may have a complex, nonlinear decision function we can infer that the
 whole network inherits further nonlinearity.
 
 Fully connected layers of CNNs can be simply modeled as the multilayer
-perceptron @rosenblatt1958perceptron, which in itself is based on the
+perceptron, which in itself is based on the
 neurotransmitter to synapse interactions of the pre-synaptic and
 post-synaptic neurons.
 
@@ -476,7 +474,7 @@ models. It is also very likely that cost functions for one area are
 calculated by another area of the brain which is in charge of setting
 goals for the first one.
 
-![fig6](../images/Types_of_Cortical_Areas.jpg)
+![fig6](../images/mbm/Types_of_Cortical_Areas.jpg)
 
 *Cortical areas by function*
 
@@ -514,7 +512,7 @@ utilize for flight. Perhaps to build more successful AI systems we need
 to learn some abstract and adaptable “learning algorithm” that we can
 then use in artificial systems.
 
-![fig7](../images/synthetic_pyramidal_dendrites.png)
+![fig7](../images/mbm/synthetic_pyramidal_dendrites.png)
 
 *Synthetic pyramidal dendrites grown using Cajal's laws*
 
@@ -566,7 +564,7 @@ mini-columns, the relationships between self-organization of these
 pattern recognizers and the cost-function optimization and goal setting
 of the neocortex, better neural models can be built for deep learning.
 
-![fig7](../images/DTI-sagittal-fibers.jpg)
+![fig7](../images/mbm/DTI-sagittal-fibers.jpg)
 
 *Tractographic reconstruction of neural connections via diffusion tensor imaging.*
 
