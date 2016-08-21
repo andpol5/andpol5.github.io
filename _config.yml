@@ -7,7 +7,7 @@ dropcap:		  true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:        	  andpol5.github.io
+url:        	  http://andpol5.github.io/
 
 # Owner/author information
 owner:
@@ -42,7 +42,7 @@ links:
 timezone:    Asia/Singapore	
 future:      true
 highlighter: rouge
-#markdown:    redcarpet
+markdown:    kramdown
 paginate:    5
 paginate_path: "page:num"
 
@@ -52,23 +52,23 @@ permalink:   /:categories/:title
 #redcarpet:
 #    extensions: ["no_intra_emphasis"]
 
-#kramdown:
-#  auto_ids: true
-#  footnote_nr: 1
-#  entity_output: as_char
-#  toc_levels: 1..6
-#  enble_coderay: false
-#
-#  coderay:
-#    coderay_line_numbers: 
-#    coderay_line_numbers_start: 1
-#    coderay_tab_width: 4
-#    coderay_bold_every: 10
-#    coderay_css: class
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enble_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://andpol5.github.io'
+  siteurl: 'http://andpol5.github.io/'
   relativeLinks: 'http://andpol5.github.io/links.jsonp'
   media: 'images'
   metadata:
