@@ -75,9 +75,12 @@ Typically a CNN consists of the following elements:
     It results in an activation of the image to that particular filter.
 
     1 dimensional convolution of continuous variables:
+    
     Equation 1: 1-D Convolution
-        $$f(t)*g(t) = \int_{-\infty}^{\infty}f(\tau) g(t-\tau)d\tau$$ 2
-    dimenssional discreet convolution (where M,N is the matrix size):
+    
+    $$f(t)*g(t) = \int_{-\infty}^{\infty}f(\tau) g(t-\tau)d\tau$$ 
+    
+    2 dimensional discreet convolution (where M,N is the matrix size):
     Equation 2: 2-D Convolution
         f[x, y]*g[x,y] = \sum_{n_1=0}^{M}\sum_{n_2=0}^{N}f[n1,n2] g[x-n_1,y-n_2]$$
 
