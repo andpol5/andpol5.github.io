@@ -38,7 +38,7 @@ deep learning, brain regions and single neuron models. Section
 2 focuses on theories and research in neuroscience as it
 relates to artificial intelligence.
 
-![fig1](../images/mbm/CNN_diagram.png)
+![fig1](/images/mbm/CNN_diagram.png)
 
 *Typical diagram of a convolutional neural network (Wikipedia)*
 
@@ -172,11 +172,11 @@ on them) are 10¹² and 300·10⁹ respectively. These estimates
 are an approximation due to the variation in the types of neurons in the
 brain as seen in Figure 3.
 
-![fig2](../images/mbm/Gray677.png)
+![fig2](/images/mbm/Gray677.png)
 
 *Cerebellum and Cerebrum*
 
-![fig3](../images/mbm/neuron_types.png)
+![fig3](/images/mbm/neuron_types.png)
 
 *Different types of neurons in the brain*
 
@@ -224,7 +224,7 @@ on the area of brain specialization - in the occipital lobe (responsible
 for visual processing) layer IV has a very complex structure just to
 handle the input of visual data.
 
-![fig4](.../images/mbm/neuron_anatomy.png)
+![fig4](/images/mbm/neuron_anatomy.png)
 
 *Left: diagram of a neuron. Right: Axon terminal and dendrite of next neuron.*
 
@@ -307,7 +307,7 @@ In some ways a single neuron is more complex than a single convolutional
 layer in a deep learning network. However, it has not yet been shown
 that all of this complexity is required for learning.
 
-![fig5](../images/mbm/leaky_integrator.png)
+![fig5](/images/mbm/leaky_integrator.png)
 
 *Leaky integrate-and-fire model of neuron spiking.*
 
@@ -474,7 +474,7 @@ models. It is also very likely that cost functions for one area are
 calculated by another area of the brain which is in charge of setting
 goals for the first one.
 
-![fig6](../images/mbm/Types_of_Cortical_Areas.jpg)
+![fig6](/images/mbm/Types_of_Cortical_Areas.jpg)
 
 *Cortical areas by function*
 
@@ -512,7 +512,7 @@ utilize for flight. Perhaps to build more successful AI systems we need
 to learn some abstract and adaptable “learning algorithm” that we can
 then use in artificial systems.
 
-![fig7](../images/mbm/synthetic_pyramidal_dendrites.png)
+![fig7](/images/mbm/synthetic_pyramidal_dendrites.png)
 
 *Synthetic pyramidal dendrites grown using Cajal's laws*
 
