@@ -39,7 +39,8 @@ deep learning, brain regions and single neuron models. Section
 relates to artificial intelligence.
 
 ![fig1](../images/CNN_diagram.png)
-<br>*Typical diagram of a convolutional neural network (Wikipedia)*
+
+*Typical diagram of a convolutional neural network (Wikipedia)*
 
 1 Background Information
 ======================
@@ -78,10 +79,12 @@ Typically a CNN consists of the following elements:
     It results in an activation of the image to that particular filter.
 
 Equation 1: 1 dimensional convolution of continuous variables:
+
 $$f(t)*g(t) = \int_{-\infty}^{\infty}f(\tau) g(t-\tau)d\tau$$ 
     
 Equation 2: 2 dimensional discreet convolution (where M,N is the matrix size):
-$$f[x, y]*g[x,y] = \sum_{n_1=0}^{M}\sum_{n_2=0}^{N}f[n1,n2] g[x-n_1,y-n_2]$$
+
+$$f(x,y)*g(x,y) = \sum_{n_1=0}^{M}\sum_{n_2=0}^{N}f(n1,n2) g(x-n_1,y-n_2)$$
 
 2)  Pooling layer - the max pooling layer is a type of sub-sampling.
     This function is necessary for reducing the number of parameters and
@@ -92,7 +95,7 @@ $$f[x, y]*g[x,y] = \sum_{n_1=0}^{M}\sum_{n_2=0}^{N}f[n1,n2] g[x-n_1,y-n_2]$$
     the nonlinear properties of the neural decision functions. Some
     common functions are the rectified linear unit (ReLu)
     f(x)=max(0,x), logistic sigmoid function
-    <span>$$f(x)=(1+e^{-x})^{-1}$$</span> and the hyperbolic tangent f(x) = tanh(x).
+    f(x)=(1+e^-x)^-1 and the hyperbolic tangent f(x) = tanh(x).
 
 4)  Fully-connected layers - fully connected layers flatten the pixel
     output of the convolutional part of the network into a flat neuron
@@ -170,9 +173,11 @@ are an approximation due to the variation in the types of neurons in the
 brain as seen in Figure 3.
 
 ![fig2](../images/Gray677.png)
+
 *Cerebellum and Cerebrum*
 
 ![fig3](../images/neuron_types.png)
+
 *Different types of neurons in the brain*
 
 ### Cerebellum and Cerebrum
@@ -220,6 +225,7 @@ for visual processing) layer IV has a very complex structure just to
 handle the input of visual data.
 
 ![fig4](.../images/neuron_anatomy.jpg)
+
 *Left: diagram of a neuron. Right: Axon terminal and dendrite of next neuron.*
 
 ### Cortical columns and mini-columns
@@ -302,6 +308,7 @@ layer in a deep learning network. However, it has not yet been shown
 that all of this complexity is required for learning.
 
 ![fig5](../images/leaky_integrator.png)
+
 *Leaky integrate-and-fire model of neuron spiking.*
 
 Neuro-encoding
@@ -468,6 +475,7 @@ calculated by another area of the brain which is in charge of setting
 goals for the first one.
 
 ![fig6](../images/Types_of_Cortical_Areas.jpg)
+
 *Cortical areas by function*
 
 
@@ -505,6 +513,7 @@ to learn some abstract and adaptable “learning algorithm” that we can
 then use in artificial systems.
 
 ![fig7](../images/synthetic_pyramidal_dendrites.png)
+
 *Synthetic pyramidal dendrites grown using Cajal's laws*
 
 ### Full Brain Simulation
@@ -556,6 +565,7 @@ pattern recognizers and the cost-function optimization and goal setting
 of the neocortex, better neural models can be built for deep learning.
 
 ![fig7](../images/DTI-sagittal-fibers.jpg)
+
 *Tractographic reconstruction of neural connections via diffusion tensor imaging.*
 
 
