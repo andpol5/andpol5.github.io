@@ -1,16 +1,15 @@
 ---
 layout: post
 published: true
-mathjax: false
+mathjax: true
 featured: false
 comments: false
 title: Mind in the Machine
-description: ''
-headline: ''
-modified: ''
-categories: ''
-tags: ''
-imagefeature: ''
+headline: Minds in the Machine - Can Deep Learning Approximate Brain Function?
+description: Mind in the Machine
+categories:
+  - engineering
+  - interesting
 ---
 # Mind in the Machine
 ## Can Deep Learning Approximate Brain Function?
@@ -37,7 +36,7 @@ deep learning, brain regions and single neuron models. Section
 relates to artificial intelligence.
 
 ![fig1](../images/CNN_diagram.png)
-*Typical diagram of a convolutional neural network (Wikipedia)*
+<br>*Typical diagram of a convolutional neural network (Wikipedia)*
 
 1 Background Information
 ======================
@@ -76,10 +75,10 @@ Typically a CNN consists of the following elements:
     It results in an activation of the image to that particular filter.
 
     1 dimensional convolution of continuous variables:
-    $$\label{eq:1dconv}
-        f(t)*g(t) = \int_{-\infty}^{\infty}f(\tau) g(t-\tau)d\tau$$ 2
+    Equation 1: 1-D Convolution
+        $$f(t)*g(t) = \int_{-\infty}^{\infty}f(\tau) g(t-\tau)d\tau$$ 2
     dimenssional discreet convolution (where M,N is the matrix size):
-    $$\label{eq:2dconv}
+    Equation 2: 2-D Convolution
         f[x, y]*g[x,y] = \sum_{n_1=0}^{M}\sum_{n_2=0}^{N}f[n1,n2] g[x-n_1,y-n_2]$$
 
 2)  Pooling layer - the max pooling layer is a type of sub-sampling.
@@ -168,10 +167,10 @@ on them) are 10¹² and 300·10⁹ respectively. These estimates
 are an approximation due to the variation in the types of neurons in the
 brain as seen in Figure 3.
 
-![fig2](images/Gray677.png)
+![fig2](../images/Gray677.png)
 *Cerebellum and Cerebrum*
 
-![fig3](images/neuron_types.png)
+![fig3](../images/neuron_types.png)
 *Different types of neurons in the brain*
 
 ### Cerebellum and Cerebrum
@@ -218,7 +217,7 @@ on the area of brain specialization - in the occipital lobe (responsible
 for visual processing) layer IV has a very complex structure just to
 handle the input of visual data.
 
-![fig4](images/neuron_anatomy.jpg)
+![fig4](.../images/neuron_anatomy.jpg)
 *Left: diagram of a neuron. Right: Axon terminal and dendrite of next neuron.*
 
 ### Cortical columns and mini-columns
@@ -300,7 +299,7 @@ In some ways a single neuron is more complex than a single convolutional
 layer in a deep learning network. However, it has not yet been shown
 that all of this complexity is required for learning.
 
-![fig5](images/leaky_integrator.png)
+![fig5](../images/leaky_integrator.png)
 *Leaky integrate-and-fire model of neuron spiking.*
 
 Neuro-encoding
@@ -466,7 +465,7 @@ models. It is also very likely that cost functions for one area are
 calculated by another area of the brain which is in charge of setting
 goals for the first one.
 
-![fig6](images/Types_of_Cortical_Areas.jpg)
+![fig6](../images/Types_of_Cortical_Areas.jpg)
 *Cortical areas by function*
 
 
@@ -503,7 +502,7 @@ utilize for flight. Perhaps to build more successful AI systems we need
 to learn some abstract and adaptable “learning algorithm” that we can
 then use in artificial systems.
 
-![fig7](images/synthetic_pyramidal_dendrites.png)
+![fig7](../images/synthetic_pyramidal_dendrites.png)
 *Synthetic pyramidal dendrites grown using Cajal's laws*
 
 ### Full Brain Simulation
@@ -554,7 +553,7 @@ mini-columns, the relationships between self-organization of these
 pattern recognizers and the cost-function optimization and goal setting
 of the neocortex, better neural models can be built for deep learning.
 
-![fig7](images/DTI-sagittal-fibers.jpg)
+![fig7](../images/DTI-sagittal-fibers.jpg)
 *Tractographic reconstruction of neural connections via diffusion tensor imaging.*
 
 
