@@ -49,6 +49,9 @@ paginate_path: "page:num"
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
 
+redcarpet:
+    extensions: ["no_intra_emphasis"]
+
 kramdown:
   auto_ids: true
   footnote_nr: 1
