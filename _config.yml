@@ -22,7 +22,7 @@ owner:
 #google_analytics:   UA-39365944-7
 #google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-#bing_verify:         
+#bing_verify:
 
 # Links to include in footer navigation
 # For external links add external: true
@@ -45,6 +45,7 @@ highlighter: rouge
 markdown:    kramdown
 paginate:    5
 paginate_path: "page:num"
+gems: [jekyll-paginate]
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
@@ -68,7 +69,8 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://andpol5.github.io/'
+  siteurl: 'http://andpol5.github.io'
+#  siteurl: 'localhost:4000'
   relativeLinks: 'http://andpol5.github.io/links.jsonp'
   media: 'images'
   metadata:

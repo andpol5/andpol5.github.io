@@ -15,7 +15,8 @@ tags: ''
 imagefeature: ''
 ---
 # Mind in the Machine
-## Can Deep Learning Approximate Brain Function?
+Can Deep Learning Approximate Brain Function?
+
 
 I wrote the following essay as the course project for the Minds, Brains and Machines class of the Master in AI at the Universitat Politècnica de Catalunya in Barcelona Spain.
 
@@ -40,7 +41,7 @@ relates to artificial intelligence.
 
 ![fig1](/images/mbm/CNN_diagram.png)
 
-*Typical diagram of a convolutional neural network (Wikipedia)*
+*Fig 1: Typical diagram of a convolutional neural network (Wikipedia)*
 
 1 Background Information
 ======================
@@ -148,8 +149,8 @@ mistakes. However, most learning done by humans is unsupervised.
 Unsupervised learning was the main focus of research in the 80s and 90s,
 but it has largely been overshadowed by supervised learning.
 Researchers, see a return to the unsupervised way of making sense of the
-world using deep generative models *@Goodfellow-et-al-2016-Book,
-@OpenAiBlog*.
+world using deep generative models [DeepLearningBook](http://www.deeplearningbook.org/),
+[OpenAI Blog - Generative Models](https://openai.com/blog/generative-models/).
 
 Generative models can provide a way of making sense of the world.
 Contrasted with discriminative learning, which only tries to calculate
@@ -174,11 +175,11 @@ brain as seen in Figure 3.
 
 ![fig2](/images/mbm/Gray677.png)
 
-*Cerebellum and Cerebrum*
+*Fig 2: Cerebellum and Cerebrum*
 
 ![fig3](/images/mbm/neuron_types.png)
 
-*Different types of neurons in the brain*
+*Fig 3: Different types of neurons in the brain*
 
 ### Cerebellum and Cerebrum
 
@@ -218,15 +219,15 @@ parts of the neocortex. Layer IV receives input from outside the
 neocortex (mainly from the thalamus). Layers V and VI have axons which
 are connected to other parts of the brain: thalamus, brain stem and
 spinal cord. Much of the regions are of the neocortex are very
-specialized towards the function of that spatial region of the brain
-@BrainVsDl. For example: layer IV changes thickness (of input) depending
+specialized towards the function of that spatial region of the brain.
+For example: layer IV changes thickness (of input) depending
 on the area of brain specialization - in the occipital lobe (responsible
 for visual processing) layer IV has a very complex structure just to
 handle the input of visual data.
 
 ![fig4](/images/mbm/neuron_anatomy.png)
 
-*Left: diagram of a neuron. Right: Axon terminal and dendrite of next neuron.*
+*Fig 4: Left: diagram of a neuron. Right: Axon terminal and dendrite of next neuron.*
 
 ### Cortical columns and mini-columns
 
@@ -309,7 +310,7 @@ that all of this complexity is required for learning.
 
 ![fig5](/images/mbm/leaky_integrator.png)
 
-*Leaky integrate-and-fire model of neuron spiking.*
+*Fig 5: Leaky integrate-and-fire model of neuron spiking.*
 
 Neuro-encoding
 --------------
@@ -351,13 +352,13 @@ In fact, the commonly used methods for modeling dendritic interactions
 in neuroscience are the LNP and the integrate-and-fire models (Figure
 5). The two models can be thought of as a
 summation and an integration respectively, just like the convolution
-equations described in Section \[sec:ConvNets\].
+equations described in the convolutional networks section.
 
 The pooling operation in ConvNets can be contrasted with the dendritic
 spike induced voltage-gated sodium channel influx. This happens when
 neurotransmitters connect to the dendrite of the post-synaptic neuron
-and open a channel for sodium ion flow (see Section
-\[sec:NeuroTransmitterAnalysis\] This causes the dendrite to rapidly
+and open a channel for sodium ion flow (see dedicated section).
+This causes the dendrite to rapidly
 depolarize and it may affect nearby dendrites and potentially the whole
 neuron. The essence of this action is that a sufficiently strong signal
 can overwrite nearby dendrites causing them to spike at the same time,
@@ -399,7 +400,7 @@ discuss them in the following sections.
 
 ### Protein Signaling and Genetic Manipulation
 
-As briefly mentioned in Section \[sec:NeuroTransmitterAnalysis\]
+As briefly mentioned in the neurotransmitter analysis section
 neurotransmitters may enter the post-synaptic neuron and signal a gene
 to produce new proteins. These new proteins can then travel to other
 neuron surfaces(soma, dendrites, axons) and cause further signaling.
@@ -436,7 +437,7 @@ cortical columns (and mini-columns). In the model, a directed thought is
 both trying to predict the sequence of output of the thought as well as
 access stored patterns (memories) related to that thought. The closest
 deep learning alternative to this would be generative models as related
-in Section \[sec:GenerativeModels\].
+previously.
 
 Brain Learning as Cost Function Optimization
 --------------------------------------------
@@ -476,7 +477,7 @@ goals for the first one.
 
 ![fig6](/images/mbm/Types_of_Cortical_Areas.jpg)
 
-*Cortical areas by function*
+*Fig 6: Cortical areas by function*
 
 
 ### Specialized Brain Systems Solve Key Problems
@@ -514,7 +515,7 @@ then use in artificial systems.
 
 ![fig7](/images/mbm/synthetic_pyramidal_dendrites.png)
 
-*Synthetic pyramidal dendrites grown using Cajal's laws*
+*Fig 7: Synthetic pyramidal dendrites grown using Cajal's laws*
 
 ### Full Brain Simulation
 
@@ -544,7 +545,7 @@ the best minds in neuroscience are working on it.
 In Ray Kurzweil’s book “How to create a mind”, Kurzweil
 notes that the neocortex performs a pattern recognition role vital to
 human intelligence. Modern research agrees that the 6-layers perform a
-sort of unsupervised learning algorithm @2014arXiv1407.3432O. Some
+sort of unsupervised learning algorithm. Some
 attempts have been made to model the cortical interactions as message
 passing algorithms popular in probabilistic graphical models. These
 Bayesian interactions play well into Kurzweil’s pattern recognition
@@ -564,9 +565,9 @@ mini-columns, the relationships between self-organization of these
 pattern recognizers and the cost-function optimization and goal setting
 of the neocortex, better neural models can be built for deep learning.
 
-![fig7](../images/mbm/DTI-sagittal-fibers.jpg)
+![fig8](/images/mbm/DTI-sagittal-fibers.jpg)
 
-*Tractographic reconstruction of neural connections via diffusion tensor imaging.*
+*Fig 8: Tractographic reconstruction of neural connections via diffusion tensor imaging.*
 
 
 ### Human Connectome Project
@@ -575,7 +576,7 @@ The human connectome project aims to build a structural description of
 the human brain. It started as a research need for a common database of
 neurological data for neuroscientists. Recent advances
 in imaging and analysis techniques such as functional MRI, diffusion MRI
-and diffusion tensor imaging (see Figure 7)
+and diffusion tensor imaging (see Figure 8)
 have allowed neuroscientists to create a rough ’wiring diagram’ of the
 brain.
 
