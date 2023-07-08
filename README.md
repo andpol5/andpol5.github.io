@@ -1,4 +1,4 @@
 ## [My GitHub blog] (https://andpol5.github.io)
 
 
-Shouts out to [@hmfaysal](https://github.com/hmfaysal) for the amazing [Notepad](https://github.com/hmfaysal/Notepad) Jekyll theme.
+Shouts out to [ryangrose](https://github.com/ryangrose) for the easy pandoc [templates](https://github.com/ryangrose/easy-pandoc-templates).
